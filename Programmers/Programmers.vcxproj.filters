@@ -13,10 +13,26 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Level1">
+      <UniqueIdentifier>{b29aaf6c-aeda-4b8b-8c83-347600d24c2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Level1\Solution_12916_가장_많이_받은_선물.md">
+      <Filter>소스 파일\Level1</Filter>
+    </Text>
+    <Text Include="Level1\Solution_12916.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Level1\Solution_12916.h">
+      <Filter>소스 파일\Level1</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
