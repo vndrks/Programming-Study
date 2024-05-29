@@ -16,23 +16,58 @@
     <Filter Include="소스 파일\Level1">
       <UniqueIdentifier>{b29aaf6c-aeda-4b8b-8c83-347600d24c2b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Level3">
+      <UniqueIdentifier>{5afa93f2-3acb-4093-b599-43ac7b9bc338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Level1">
+      <UniqueIdentifier>{e15cbcb8-d198-4121-8100-79abf8741b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Level3">
+      <UniqueIdentifier>{9e05f450-3cdb-4066-a6ed-f03998fe300e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Level3\Solution_42895.cpp">
+      <Filter>소스 파일\Level3</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution_Test.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1\Solution_12916.cpp">
+      <Filter>소스 파일\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution_43162.cpp">
+      <Filter>소스 파일\Level3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Level1\Solution_12916_가장_많이_받은_선물.md">
       <Filter>소스 파일\Level1</Filter>
     </Text>
-    <Text Include="Level1\Solution_12916.cpp">
-      <Filter>소스 파일\Level1</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Level1\Solution_12916.h">
-      <Filter>소스 파일\Level1</Filter>
+      <Filter>헤더 파일\Level1</Filter>
     </ClInclude>
+    <ClInclude Include="Level3\Solution_42895.h">
+      <Filter>헤더 파일\Level3</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_Test.h">
+      <Filter>헤더 파일\Level1</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_43162.h">
+      <Filter>헤더 파일\Level3</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Level3\Solution_42895_N으로_표현.md">
+      <Filter>소스 파일\Level3</Filter>
+    </None>
+    <None Include="Solution_43162_네트워크.md">
+      <Filter>소스 파일\Level3</Filter>
+    </None>
   </ItemGroup>
 </Project>

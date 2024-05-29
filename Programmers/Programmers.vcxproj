@@ -70,6 +70,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>.\Level1;.\Level3;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -104,11 +107,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Level1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\Level3;.\Level1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Level1;.\Level3;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -128,14 +133,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Level1\Solution_12916.cpp" />
+    <ClCompile Include="Level3\Solution_42895.cpp" />
     <ClCompile Include="Programmers.cpp" />
+    <ClCompile Include="Solution_43162.cpp" />
+    <ClCompile Include="Solution_Test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Level1\Solution_12916.cpp" />
     <Text Include="Level1\Solution_12916_가장_많이_받은_선물.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Level1\Solution_12916.h" />
+    <ClInclude Include="Level3\Solution_42895.h" />
+    <ClInclude Include="Solution_43162.h" />
+    <ClInclude Include="Solution_Test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Level3\Solution_42895_N으로_표현.md" />
+    <None Include="Solution_43162_네트워크.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
