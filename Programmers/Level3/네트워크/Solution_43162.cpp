@@ -5,14 +5,12 @@ using namespace std;
 Solution_43162::Solution_43162()
 {
 	vector<pair<int, vector<vector<int>>>> test_cases = {
-		
 		{3, {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}}}, // 2
 		{3, {{1, 1, 0}, {1, 1, 1}, {0, 1, 1}}}, // 1
 		{4, {{1, 1, 0, 1}, {0, 1, 1, 0}, {0, 1, 1, 0}, {1, 1, 0, 1}}}, // 1
 		{4, {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}}}, // 4
 		{4, {{1, 1, 0, 0}, {1, 1, 0, 0}, {0, 0, 1, 1}, {0, 0, 1, 1}}}, // 2
 		{5, {{1, 0, 0, 0, 1}, {0, 1, 1, 0, 0}, {0, 1, 1, 1, 0}, {0, 0, 1, 1, 1}, {1, 0, 0, 1, 1}}}, // 1
-		
 		{3, {{1, 1, 1}, {1, 1, 1}, {1, 1, 1}}}, // 1
 		{4, {{1, 0, 0, 1}, {0, 1, 1, 0}, {0, 1, 1, 0}, {1, 1, 0, 1}}}, // 1
 		{5, {{1, 0, 1, 0, 0}, {0, 1, 0, 0, 1}, {1, 0, 1, 0, 1}, {0, 0, 0, 1, 0}, {0, 1, 1, 0, 1}}}, // 2
@@ -41,6 +39,7 @@ Solution_43162::Solution_43162()
 	});
 }
 
+/* Using DFS */
 int Solution_43162::solution(int n, vector<vector<int>> computers) {
 	int answer = 0;
 	vector<bool> visited(n, false);
@@ -64,7 +63,7 @@ int Solution_43162::solution(int n, vector<vector<int>> computers) {
 				}
 			}
 		}
-		};
+	};
 
 	for (int i = 0; i < n; ++i)
 	{
@@ -115,7 +114,7 @@ int solution_bfs(int n = 4, vector<vector<int>> computers = { { 1, 0, 0, 1 }, {0
 	return answer;
 }
 
-/* Union-Find structure */
+/* Union-Find structure : This is incomplete code. Error occurred in test case no.9  */
 vector<int> parent;
 vector<int> v_rank;
 
