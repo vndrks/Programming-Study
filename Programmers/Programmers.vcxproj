@@ -107,8 +107,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Level3;.\Level1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\Level3\네트워크\;.\Level1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,8 +136,8 @@
   <ItemGroup>
     <ClCompile Include="Level1\Solution_12916.cpp" />
     <ClCompile Include="Level3\Solution_42895.cpp" />
+    <ClCompile Include="Level3\네트워크\Solution_43162.cpp" />
     <ClCompile Include="Programmers.cpp" />
-    <ClCompile Include="Solution_43162.cpp" />
     <ClCompile Include="Solution_Test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -145,12 +146,12 @@
   <ItemGroup>
     <ClInclude Include="Level1\Solution_12916.h" />
     <ClInclude Include="Level3\Solution_42895.h" />
-    <ClInclude Include="Solution_43162.h" />
+    <ClInclude Include="Level3\네트워크\Solution_43162.h" />
     <ClInclude Include="Solution_Test.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Level3\Solution_42895_N으로_표현.md" />
-    <None Include="Solution_43162_네트워크.md" />
+    <None Include="Level3\네트워크\Solution_43162_네트워크.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -39,7 +39,7 @@
     <ClCompile Include="Level1\Solution_12916.cpp">
       <Filter>소스 파일\Level1</Filter>
     </ClCompile>
-    <ClCompile Include="Solution_43162.cpp">
+    <ClCompile Include="Level3\네트워크\Solution_43162.cpp">
       <Filter>소스 파일\Level3</Filter>
     </ClCompile>
   </ItemGroup>
@@ -58,7 +58,7 @@
     <ClInclude Include="Solution_Test.h">
       <Filter>헤더 파일\Level1</Filter>
     </ClInclude>
-    <ClInclude Include="Solution_43162.h">
+    <ClInclude Include="Level3\네트워크\Solution_43162.h">
       <Filter>헤더 파일\Level3</Filter>
     </ClInclude>
   </ItemGroup>
@@ -66,7 +66,7 @@
     <None Include="Level3\Solution_42895_N으로_표현.md">
       <Filter>소스 파일\Level3</Filter>
     </None>
-    <None Include="Solution_43162_네트워크.md">
+    <None Include="Level3\네트워크\Solution_43162_네트워크.md">
       <Filter>소스 파일\Level3</Filter>
     </None>
   </ItemGroup>
