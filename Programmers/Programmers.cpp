@@ -4,6 +4,7 @@
 #include "Solution_12916.h"
 #include "Solution_42895.h"
 #include "Solution_43162.h"
+#include "Solution_43163.h"
 #include "Solution_Test.h"
 
 int main()
@@ -16,4 +17,5 @@ int main()
     // sol_12916.solution();
 
     Solution_43162 sol_43162;
+    Solution_43163 sol_43163;
 }

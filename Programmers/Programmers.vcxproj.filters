@@ -25,6 +25,12 @@
     <Filter Include="헤더 파일\Level3">
       <UniqueIdentifier>{9e05f450-3cdb-4066-a6ed-f03998fe300e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\네트워크">
+      <UniqueIdentifier>{eacee7ee-bc2a-4109-8600-9c956bd28a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\단어변환">
+      <UniqueIdentifier>{46478ea6-5889-4e65-b1e9-9169b7a7d278}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers.cpp">
@@ -40,6 +46,9 @@
       <Filter>소스 파일\Level1</Filter>
     </ClCompile>
     <ClCompile Include="Level3\네트워크\Solution_43162.cpp">
+      <Filter>소스 파일\Level3</Filter>
+    </ClCompile>
+    <ClCompile Include="Level3\단어변환\Solution_43163.cpp">
       <Filter>소스 파일\Level3</Filter>
     </ClCompile>
   </ItemGroup>
@@ -61,13 +70,19 @@
     <ClInclude Include="Level3\네트워크\Solution_43162.h">
       <Filter>헤더 파일\Level3</Filter>
     </ClInclude>
+    <ClInclude Include="Level3\단어변환\Solution_43163.h">
+      <Filter>헤더 파일\Level3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Level3\Solution_42895_N으로_표현.md">
       <Filter>소스 파일\Level3</Filter>
     </None>
-    <None Include="Level3\네트워크\Solution_43162_네트워크.md">
-      <Filter>소스 파일\Level3</Filter>
+    <None Include="Level3\네트워크\Readme.md">
+      <Filter>리소스 파일\네트워크</Filter>
+    </None>
+    <None Include="Level3\단어변환\Readme.md">
+      <Filter>리소스 파일\단어변환</Filter>
     </None>
   </ItemGroup>
 </Project>
