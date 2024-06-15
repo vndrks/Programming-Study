@@ -31,6 +31,15 @@
     <Filter Include="리소스 파일\단어변환">
       <UniqueIdentifier>{46478ea6-5889-4e65-b1e9-9169b7a7d278}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\타겟넘버">
+      <UniqueIdentifier>{75efed22-bc0e-4f90-8bd5-4c1911cd2e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Level2">
+      <UniqueIdentifier>{66bb9434-3b3a-4a76-bfe3-30d10795e018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Level2">
+      <UniqueIdentifier>{1e84a864-bbbb-4848-8152-73b75609ffc5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers.cpp">
@@ -50,6 +59,9 @@
     </ClCompile>
     <ClCompile Include="Level3\단어변환\Solution_43163.cpp">
       <Filter>소스 파일\Level3</Filter>
+    </ClCompile>
+    <ClCompile Include="Level2\타겟넘버\Solution_43165.cpp">
+      <Filter>소스 파일\Level2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +85,9 @@
     <ClInclude Include="Level3\단어변환\Solution_43163.h">
       <Filter>헤더 파일\Level3</Filter>
     </ClInclude>
+    <ClInclude Include="Level2\타겟넘버\Solution_43165.h">
+      <Filter>헤더 파일\Level2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Level3\Solution_42895_N으로_표현.md">
@@ -83,6 +98,9 @@
     </None>
     <None Include="Level3\단어변환\Readme.md">
       <Filter>리소스 파일\단어변환</Filter>
+    </None>
+    <None Include="Level2\타겟넘버\Readme.md">
+      <Filter>리소스 파일\타겟넘버</Filter>
     </None>
   </ItemGroup>
 </Project>

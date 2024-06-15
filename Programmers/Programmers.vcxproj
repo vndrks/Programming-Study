@@ -135,6 +135,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Level1\Solution_12916.cpp" />
+    <ClCompile Include="Level2\타겟넘버\Solution_43165.cpp" />
     <ClCompile Include="Level3\Solution_42895.cpp" />
     <ClCompile Include="Level3\네트워크\Solution_43162.cpp" />
     <ClCompile Include="Level3\단어변환\Solution_43163.cpp" />
@@ -146,12 +147,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Level1\Solution_12916.h" />
+    <ClInclude Include="Level2\타겟넘버\Solution_43165.h" />
     <ClInclude Include="Level3\Solution_42895.h" />
     <ClInclude Include="Level3\네트워크\Solution_43162.h" />
     <ClInclude Include="Level3\단어변환\Solution_43163.h" />
     <ClInclude Include="Solution_Test.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Level2\타겟넘버\Readme.md" />
     <None Include="Level3\Solution_42895_N으로_표현.md" />
     <None Include="Level3\네트워크\Readme.md" />
     <None Include="Level3\단어변환\Readme.md" />

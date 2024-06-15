@@ -12,6 +12,7 @@ class Solution_12916
 public:
 	Solution_12916();
 
+
 public:
 	int solution(vector<string> friends, vector<string> gifts);
 };
