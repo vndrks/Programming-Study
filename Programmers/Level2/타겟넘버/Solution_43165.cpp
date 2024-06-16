@@ -11,9 +11,6 @@ Solution_43165::Solution_43165()
 int Solution_43165::solution(vector<int> numbers, int target)
 {
 	int answer = 0;
-
-	
-
 	stack<pair<int, int>> st;
 	st.push(make_pair(0, 0));
 
@@ -37,10 +34,7 @@ int Solution_43165::solution(vector<int> numbers, int target)
 	return answer;
 }
 
-
 /* Using Recursive */
-
-
 int dfs1(const vector<int>& numbers, int target, int index, int currentSum) {
 	// Base case: if we've considered all numbers
 	if (index == numbers.size()) {
@@ -56,17 +50,18 @@ int dfs1(const vector<int>& numbers, int target, int index, int currentSum) {
 	return add + subtract;
 }
 
-void Solution_43165::dfs2(int sum, int index, vector<int> numbers, int target, int& answer)
+/**
+  *
+  */
+void Solution_43165::do_visit(int sum, int index, const vector<int>& numbers, int target, int& answer)
 {
 	if (index == numbers.size())
 	{
-		if (sum == target)
-			++answer;
-		return;
+		sum == target ? ++answer : return;
 	}
 
-	dfs2(sum + numbers[index], index + 1, numbers, target, answer);
-	dfs2(sum - numbers[index], index + 1, numbers, target, answer);
+	do_visit(sum + numbers[index], index + 1, numbers, target, answer);
+	do_visit(sum - numbers[index], index + 1, numbers, target, answer);
 }
 
 
@@ -74,6 +69,6 @@ void Solution_43165::dfs2(int sum, int index, vector<int> numbers, int target, i
 int Solution_43165::solution_recursive(vector<int> numbers, int target)
 {
 	int answer = 0;
-	dfs2(0, 0, numbers, target, answer);
+	do_visit(0, 0, numbers, target, answer);
 	return answer;
 }
